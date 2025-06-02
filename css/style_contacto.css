@@ -12,12 +12,14 @@ html, body {
     color: #000000;
 }
 
+
+
 header {
-    background-image: url('https://st.depositphotos.com/1325564/3555/i/450/depositphotos_35556397-stock-photo-sports-interior.jpg');
+    background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg');    
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 70vh;
     width: 100%;
     display: flex; 
     justify-content: center;
