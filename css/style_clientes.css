@@ -1,4 +1,4 @@
-/* Css Del Index */
+/* Css De Clientes*/
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +72,60 @@ nav {
 .menu a:hover {
     background-color: #000000; 
     color: #C4CAD0; 
+}
+
+.contenido{
+    display: grid;
+    place-items: center;
+    margin: 10px;
+
+}
+
+.opiniones {
+    max-width: 60rem;
+    width: 100%;
+    background-color: #FCF7FF;
+    border: 2px solid #C4CAD0;
+    padding: 10px;
+}
+
+.opiniones h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 60rem ;
+    color: #2F4550;
+}
+
+.opinion{
+    background-color: #586f7c;
+    color: #FCF7FF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(47, 69, 80, 0.07);
+}
+
+.op{ 
+    background: #C4CAD0;
+    color: #2F4550;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0.5rem;
+    max-width: 600px;
+    border-radius: 30px;
+    }
+
+
+footer {
+    background: #C4CAD0;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 600px) {
