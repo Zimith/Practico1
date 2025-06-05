@@ -1,4 +1,4 @@
-/* Css Del Index */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +9,22 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #FCF7FF; 
-    color: #000000;
+    color: #000000;           
+    font-family: 'Arial', sans-serif; 
 }
 
 header {
     background-image: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg');
     background-size: cover;
-    background-position: center ;
+    background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #FCF7FF;
+    color: #FCF7FF; 
     padding: 2rem;
     margin: 0;
 }
@@ -64,12 +65,68 @@ nav {
     padding: 0.1rem 1rem;
     border: 0.2rem solid #C4CAD0; 
     border-radius: 5px;
-    background-color: #586f7c; 
+    background-color: #586f7c;    
 }
 
 .menu a:hover {
-    background-color: #000000; 
-    color: #C4CAD0; 
+    background-color: #000000;    
+    color: #C4CAD0;               
+}
+
+.inicio {
+    display: flex;
+    height: 1750px; 
+}
+
+.servicios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: transparent; 
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(47, 69, 80, 0.05);
+    padding: 1.5rem 0.5rem;
+}
+
+.mitad {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.izquierda {
+    background-color: #2F4550; 
+}
+.derecha {
+    background-color: #586f7c; 
+}
+
+.servicios li {
+    list-style: none;
+}
+
+.imagen_izquierda {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #C4CAD0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+footer {
+    background: #c4cad0;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 600px) {
@@ -77,14 +134,20 @@ nav {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .menu {
         flex-direction: column;
         padding: 0;
     }
-
     .menu li {
         margin-bottom: 0.5rem;
+    }
+    .inicio {
+        flex-direction: column;
+        height: auto;
+    }
+    .mitad {
+        width: 100%;
+        font-size: 1rem;
     }
 }
 
@@ -92,32 +155,26 @@ nav {
     .nav-logo {
         font-size: 1.3rem;
     }
-
     nav {
         padding: 0.5rem 1rem;
     }
-
     .menu {
         gap: 1.5rem;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
     .menu a {
         padding: 0.2rem 1.2rem;
         font-size: 1rem;
     }
-
     header {
         padding: 1.5rem;
         height: 350px;
         flex-direction: column;
     }
-
     .eslogan h1 {
         font-size: 1.6rem;
     }
-
     .eslogan p {
         font-size: 1rem;
     }
