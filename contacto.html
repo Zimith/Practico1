@@ -6,9 +6,7 @@
     <title>Contanto</title>
     <link rel="stylesheet" href="css/style_contacto.css">
     <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"></head>
 
 <!-- Para comentar codigo es ctrl + k despues seguido ctrl + c -->
 <body>
@@ -40,7 +38,7 @@
     <div class="contacto">
         <h2>Contáctanos</h2>
         <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
-        <form>
+        <form id="formulario">
             <div class="form-grupo">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" required>
@@ -49,30 +47,35 @@
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" required>
             </div>
-            <div class="form-grupo">
+            <div class="form-grupo" id="bloqueenteraste">
                 <label for="enteraste">¿Como te enteraste de nosontros?:</label>
                 <select id="enteraste">
                     <option value="">Seleccione una opción</option>
                     <option value="redes">Redes Sociales</option>
                     <option value="recomendacion">Recomendación de un amigo</option>
-                    <option value="comentario">comentarios</option>
+                    <option value="comentarios">comentarios</option>
                     <option value="otro">Otro</option>
                 </select>
             </div>
+            <div class="form-grupo escondido" id="bloqueespecifique">
+                <label for="especifique">Especifique:</label>
+                <textarea id="especifique"></textarea>     
+            </div>
             <div class="form-grupo">
-                <label for="otro">Especifique:</label>
-                <textarea id="otro" required></textarea>     
-            </div>  
-            <div class="form-grupo">
+                <label for="mensaje">Nos quieres dar un mensaje?: </label>
+                <textarea id="mensaje" required></textarea>
+            </div>
+            <div class="form-grupo" id="boton">
                 <button type="submit" class="enviar">Enviar</button>
             </div>
             </div>
 
         </form>
 
-    <footer>
-        <h1>Contenido Reservado</h1>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Fit Pro - Todos los derechos reservados</p>
+        </footer>
+    
 
 
 </body>
