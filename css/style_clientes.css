@@ -10,7 +10,7 @@ html, body {
     height: 100%;
     background-color: #FCF7FF; 
     color: #000000;
-    font-family: 'Alumni Sans SC', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 header {
@@ -38,9 +38,6 @@ nav {
     align-items: center;
     padding: 0.5rem 2rem;
     color: #FCF7FF;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .nav-logo {

@@ -72,7 +72,6 @@ nav {
 
 .inicio {
     display: flex;
-    height: 1750px; 
 }
 
 .servicios {
@@ -112,7 +111,7 @@ nav {
     max-width: 100%;
     border-radius: 10px;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
     border: 2px solid #C4CAD0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }

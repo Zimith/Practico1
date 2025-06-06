@@ -10,6 +10,7 @@ html, body {
     height: 100%;
     background-color: #FCF7FF; 
     color: #000000;
+    font-family: Oswald, sans-serif;
 }
 
 
@@ -37,9 +38,6 @@ nav {
     align-items: center;
     padding: 0.5rem 2rem;
     color: #FCF7FF;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .nav-logo {
@@ -72,6 +70,23 @@ nav {
 .menu a:hover {
     background-color: #000000; 
     color: #C4CAD0; 
+}
+
+
+
+.form-grupo {
+    display: block;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+input, textarea, select,button {
+    display: block;
+    margin: 5px;
+
 }
 
 @media (max-width: 600px) {

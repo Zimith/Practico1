@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contanto</title>
     <link rel="stylesheet" href="css/style_contacto.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
 </head>
 
 <!-- Para comentar codigo es ctrl + k despues seguido ctrl + c -->
@@ -31,10 +34,41 @@
     </header>
 
     <section>
-        <p>Podes escribirnos para su consulta ETC ETC</p>
-        <!-- ACA, hacer el formulario completo, agregar algo mas de  texto arriba el form. -->
+
 
     </section>
+    <div class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+        <form>
+            <div class="form-grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form-grupo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-grupo">
+                <label for="enteraste">¿Como te enteraste de nosontros?:</label>
+                <select id="enteraste">
+                    <option value="">Seleccione una opción</option>
+                    <option value="redes">Redes Sociales</option>
+                    <option value="recomendacion">Recomendación de un amigo</option>
+                    <option value="comentario">comentarios</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-grupo">
+                <label for="otro">Especifique:</label>
+                <textarea id="otro" required></textarea>     
+            </div>  
+            <div class="form-grupo">
+                <button type="submit" class="enviar">Enviar</button>
+            </div>
+            </div>
+
+        </form>
 
     <footer>
         <h1>Contenido Reservado</h1>
