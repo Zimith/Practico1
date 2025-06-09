@@ -1,5 +1,5 @@
 const enteraste = document.getElementById("enteraste");
-const bloqueenteraste = document.getElementById("bloqueespefifique");
+const bloqueenteraste = document.getElementById("bloqueespecifique");
 
 enteraste.addEventListener("change", function() {
     bloqueespecifique.classList.add("escondido");
