@@ -11,7 +11,7 @@ html, body {
     height: 100%;
     background-color: #FCF7FF;
     color: #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -28,6 +28,9 @@ header {
     color: #FCF7FF;
     padding: 2rem;
     margin: 0;
+}
+#contacto{
+    text-align:center;
 }
 
 nav {
@@ -129,7 +132,7 @@ footer {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        
     }
 
     .menu {
