@@ -9,41 +9,56 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #FCF7FF;
-    color: #000000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2F4550; 
+    color: #FCF7FF;
+    font-family: "crimson pro", serif;
+    font-size: 16px;    
 }
 
 header {
     background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg');    
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    height: 70vh;
-    width: 100%;
-    display: flex; 
+    background-size: cover; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #FCF7FF;
-    padding: 2rem;
-    margin: 0;
+    color: #FCF7FF; 
+    padding: 0; 
+    margin: 0; 
+    border-bottom: 3px solid #C4CAD0;
 }
 
 nav {
     background-color: #2F4550; 
+    color: #FCF7FF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 2rem;
-    color: #FCF7FF;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 3px solid #C4CAD0;
+    margin-bottom: 2rem;
 }
 
 .nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: colum;
+    gap: 1rem;
     font-size: 1.5rem;
-    color: #FCF7FF;
+    color: #FCF7FF; 
     font-weight: bold;
     margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #C4CAD0;
+    padding-bottom: 0.5rem;
 }
 
 .menu {
@@ -52,23 +67,32 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    column-gap: 2rem;     
+}    
+
+.menu li {
+    margin-bottom: 1.2rem;    
+    row-gap: 1.5rem; 
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .menu a {
+    background-color: transparent; 
     color: #FCF7FF;
+    border: 0.2rem solid #586F7C;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.1rem 1rem;
-    border: 0.2rem solid #C4CAD0; 
+    padding: 0.3rem 1.2rem;
     border-radius: 5px;
-    background-color: #586F7C; 
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    box-shadow: 0 2px 2px #586F7C33;
 }
 
 .menu a:hover {
-    background-color: #000000; 
-    color: #C4CAD0; 
+    background-color: #586F7C;
+    color: #C4CAD0;
+    border: 0.2rem solid #2F4550;
 }
 
 section {
@@ -83,8 +107,8 @@ section {
     max-width: 600px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #2F4550; 
-    color: #FCF7FF; 
+    background-color: #FCF7FF; /* más claro */
+    color: #2F4550; /* texto oscuro */
     border-radius: 12px;
     font-size: 1.2rem;
 }
@@ -93,52 +117,57 @@ input, textarea, select {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 2px solid #C4CAD0;
+    border: 2px solid #586F7C;
     border-radius: 5px;
-    background-color: #FCF7FF; 
-    color: #2F4550;
+    background-color: #C4CAD0; /* más gris */
+    color: #000000;
     font-size: 1rem;
 }
 
 button {
-    background-color: #586F7C; 
+    background-color: #000000; /* negro */
     color: #FCF7FF; 
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 1rem;
-}
-button:hover {
-    background-color: #000000; 
-    color: #C4CAD0; 
+    cursor: pointer;
 }
 
-.escondido{
+button:hover {
+    background-color: #586F7C; /* gris azulado */
+    color: #FCF7FF;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.escondido {
     display: none;
 }
 
 footer {
-    background: #C4CAD0;
-    color: #000000;
+    background: #586F7C;    
+    color: #FCF7FF;         
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;
     letter-spacing: 1px;
+    margin-top: 2rem;
 }
 
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .menu {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: wrap;
         padding: 0;
     }
 
     .menu li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 }
 

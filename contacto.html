@@ -6,31 +6,31 @@
     <title>Contanto</title>
     <link rel="stylesheet" href="css/style_contacto.css">
     <script src="js/script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"></head>
-
-<!-- Para comentar codigo es ctrl + k despues seguido ctrl + c -->
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Para comentar codigo es ctrl + k despues seguido ctrl + c -->
 <body>
-    <nav>
+
+    <!-- Header -->
+    <header>
         <div class="nav-logo">
             <h1>Fit Pro</h1>
         </div>
+        <div class ="eslogan"> <!-- Cambiar en todas!! -->
+            <h1 id="contacto">Contacto</h1>
+        </div>
+
+    </header>
+    <nav>
+
     <!-- Barra de navegación -->
         <ul class="menu">
             <!-- Links -->
             <li><a href="index.html">Home</a></li>
             <li><a href="nosotros.html">Equipo</a></li>
-            <li><a href="clientes.html">Nuestros clientes</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <!-- Header -->
-    <header>
-        <div class ="eslogan"> <!-- Cambiar en todas!! -->
-            <h1>Contacto</h1>
-        </div>
-
-    </header>
-
     <section>
 
 
@@ -48,8 +48,8 @@
                 <input type="email" id="email" required>
             </div>
             <div class="form-grupo" id="bloqueenteraste">
-                <!-- <label for="enteraste">¿Como te enteraste de nosotros?:</label> -->
-                <select id="enteraste">
+                <label for="enteraste">¿Como te enteraste de nosotros?:</label>
+                <select id="enteraste" required>
                     <option value="">Seleccione una opción</option>
                     <option value="redes">Redes Sociales</option>
                     <option value="recomendacion">Recomendación de un amigo</option>
@@ -62,8 +62,8 @@
                 <textarea id="especifique"></textarea>     
             </div>
             <div class="form-grupo">
-                <label for="mensaje">Nos quieres dar un mensaje?: </label>
-                <textarea id="mensaje" required></textarea>
+                <label for="mensaje">¿Nos quieres dar un mensaje?: </label>
+                <textarea id="mensaje" ></textarea>
             </div>
             <div class="form-grupo" id="boton">
                 <button type="submit" class="enviar">Enviar</button>
